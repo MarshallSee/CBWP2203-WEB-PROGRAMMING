@@ -8,14 +8,48 @@
 </head>
 <body class="font-sans leading-normal text-gray-800">
     <header class="bg-blue-600 text-white py-6">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
             <h1 class="text-3xl font-bold">Virtual Career Fair 2023</h1>
+            <nav>
+                <ul class="flex space-x-4 text-sm">
+                    <li><a href="home.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="companies.html" class="hover:underline">Companies</a></li>
+                    <li><a href="schedule.html" class="hover:underline">Schedule</a></li>
+                    <li><a href="resources.html" class="hover:underline">Resources</a></li>
+                    <li><a href="registration.html" class="hover:underline">Registration</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="container mx-auto px-4 py-8">
         <h2 class="text-xl font-semibold mb-4">Register for the Fair</h2>
-        <p class="mb-4">Ready to join us? Use the link below to complete the online registration form. Be sure to provide accurate information so employers can contact you during the event.</p>
-        <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Go to Registration Form</a>
+        <p class="mb-4">Ready to join us? Complete the form below to secure your spot at the fair. Provide accurate contact details so employers can reach you.</p>
+
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block font-medium">Full Name</label>
+                <input id="name" type="text" class="mt-1 w-full border rounded px-3 py-2" required>
+            </div>
+            <div>
+                <label for="email" class="block font-medium">Email Address</label>
+                <input id="email" type="email" class="mt-1 w-full border rounded px-3 py-2" required>
+            </div>
+            <div>
+                <label for="interest" class="block font-medium">Area of Interest</label>
+                <input id="interest" type="text" class="mt-1 w-full border rounded px-3 py-2">
+            </div>
+            <div>
+                <label for="sessions" class="block font-medium">Sessions to Attend</label>
+                <select id="sessions" class="mt-1 w-full border rounded px-3 py-2">
+                    <option>Opening Ceremony</option>
+                    <option>Resume Workshop</option>
+                    <option>Employer Briefing</option>
+                    <option>Mock Interviews</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit Registration</button>
+        </form>
         <div class="mt-6">
             <h3 class="font-medium mb-2">Registration Checklist</h3>
             <ul class="list-disc pl-5 space-y-1">
